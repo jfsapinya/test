@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "chokidar": "^2.0.3",
+    "node-sass": "^4.8.3",
     "react": "^16.3.1",
     "react-dom": "^16.3.1"
   },
@@ -15,6 +17,7 @@
     "typescript": "^2.8.1"
   },
   "scripts": {
+    "sass": "node-sass-chokidar --output-style compressed src/sass/ -o src/",
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
